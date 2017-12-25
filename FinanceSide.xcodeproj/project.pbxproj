@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		990160A91F9B645200573203 /* connexionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990160A81F9B645200573203 /* connexionViewController.swift */; };
+		99056B641F90D52A00C6B269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99056B631F90D52A00C6B269 /* AppDelegate.swift */; };
+		99056B691F90D52A00C6B269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99056B671F90D52A00C6B269 /* Main.storyboard */; };
+		99056B6B1F90D52A00C6B269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99056B6A1F90D52A00C6B269 /* Assets.xcassets */; };
+		99056B6E1F90D52A00C6B269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99056B6C1F90D52A00C6B269 /* LaunchScreen.storyboard */; };
+		99056B791F90D52A00C6B269 /* FinanceSideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99056B781F90D52A00C6B269 /* FinanceSideTests.swift */; };
+		99056B841F90D52A00C6B269 /* FinanceSideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99056B831F90D52A00C6B269 /* FinanceSideUITests.swift */; };
+		99056B961F90D81700C6B269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99056B951F90D81700C6B269 /* ViewController.swift */; };
+		99056BC01F9226F900C6B269 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99056BBF1F9226F900C6B269 /* BarChart.swift */; };
+		99056BCA1F95F68C00C6B269 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99056BC71F95F63800C6B269 /* Charts.framework */; };
+		99056BCB1F95F68C00C6B269 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99056BC71F95F63800C6B269 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99266FA91F9F5DD5006DD78A /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99266FA81F9F5DD5006DD78A /* menuViewController.swift */; };
+		99266FAC1F9F5F06006DD78A /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99266FAB1F9F5F06006DD78A /* CircularTransition.swift */; };
+		994A99F41FA095710078C2BE /* reportingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994A99F31FA095710078C2BE /* reportingViewController.swift */; };
+		998AE5FC1F9BAE680075F0B6 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998AE5FB1F9BAE680075F0B6 /* ShakingTextField.swift */; };
+		99924B531F9CD65C0026DE16 /* newTradeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99924B521F9CD65C0026DE16 /* newTradeController.swift */; };
+		999F0E2C1F9D194F00D61C94 /* ELineChartDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E161F9D194C00D61C94 /* ELineChartDataModel.m */; };
+		999F0E2D1F9D194F00D61C94 /* EColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E171F9D194C00D61C94 /* EColumn.m */; };
+		999F0E2E1F9D194F00D61C94 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E191F9D194C00D61C94 /* UICountingLabel.m */; };
+		999F0E2F1F9D194F00D61C94 /* EColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E1C1F9D194C00D61C94 /* EColor.m */; };
+		999F0E301F9D194F00D61C94 /* EColumnChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E1D1F9D194C00D61C94 /* EColumnChart.m */; };
+		999F0E311F9D194F00D61C94 /* EColumnDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E1E1F9D194C00D61C94 /* EColumnDataModel.m */; };
+		999F0E321F9D194F00D61C94 /* EColumnChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E1F1F9D194D00D61C94 /* EColumnChartLabel.m */; };
+		999F0E331F9D194F00D61C94 /* EFloatBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E261F9D194E00D61C94 /* EFloatBox.m */; };
+		999F0E341F9D194F00D61C94 /* ELine.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E271F9D194E00D61C94 /* ELine.m */; };
+		999F0E351F9D194F00D61C94 /* ELineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E281F9D194E00D61C94 /* ELineChart.m */; };
+		999F0E361F9D194F00D61C94 /* EPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E291F9D194E00D61C94 /* EPieChart.m */; };
+		999F0E371F9D194F00D61C94 /* EViewSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F0E2A1F9D194E00D61C94 /* EViewSwitcher.m */; };
+		999F0EAE1F9D5C6800D61C94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999F0E591F9D36D900D61C94 /* UIKit.framework */; };
+		99AD57331F9E6A1B00F8FCD4 /* realNewTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AD57321F9E6A1B00F8FCD4 /* realNewTradeViewController.swift */; };
+		99E068B61FA22628005C13AF /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E068B51FA22628005C13AF /* UICountingLabel.framework */; };
+		99E068B81FA271E8005C13AF /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E068B71FA271E8005C13AF /* Admin.swift */; };
+		99E068BA1FA32FAB005C13AF /* StatisticsTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E068B91FA32FAA005C13AF /* StatisticsTrade.swift */; };
+		99E068BC1FA33E2C005C13AF /* Reporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E068BB1FA33E2C005C13AF /* Reporting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99056B751F90D52A00C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99056B581F90D52A00C6B269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99056B5F1F90D52A00C6B269;
+			remoteInfo = FinanceSide;
+		};
+		99056B801F90D52A00C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99056B581F90D52A00C6B269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99056B5F1F90D52A00C6B269;
+			remoteInfo = FinanceSide;
+		};
+		99056BC61F95F63800C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99056BC11F95F63700C6B269 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		99056BC81F95F63800C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99056BC11F95F63700C6B269 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		99056BCC1F95F68C00C6B269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99056BC11F95F63700C6B269 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99056BA71F92109F00C6B269 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99056BCB1F95F68C00C6B269 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		990160A81F9B645200573203 /* connexionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connexionViewController.swift; sourceTree = "<group>"; };
+		99056B601F90D52A00C6B269 /* FinanceSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99056B631F90D52A00C6B269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99056B681F90D52A00C6B269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99056B6A1F90D52A00C6B269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99056B6D1F90D52A00C6B269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99056B6F1F90D52A00C6B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99056B741F90D52A00C6B269 /* FinanceSideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceSideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99056B781F90D52A00C6B269 /* FinanceSideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceSideTests.swift; sourceTree = "<group>"; };
+		99056B7A1F90D52A00C6B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99056B7F1F90D52A00C6B269 /* FinanceSideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceSideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99056B831F90D52A00C6B269 /* FinanceSideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceSideUITests.swift; sourceTree = "<group>"; };
+		99056B851F90D52A00C6B269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99056B951F90D81700C6B269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99056BBF1F9226F900C6B269 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		99056BC11F95F63700C6B269 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master 3/Charts.xcodeproj"; sourceTree = "<group>"; };
+		99266FA81F9F5DD5006DD78A /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		99266FAB1F9F5F06006DD78A /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		994A99F31FA095710078C2BE /* reportingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reportingViewController.swift; sourceTree = "<group>"; };
+		998AE5FB1F9BAE680075F0B6 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
+		99924B521F9CD65C0026DE16 /* newTradeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTradeController.swift; sourceTree = "<group>"; };
+		999F0E131F9D194A00D61C94 /* FinanceSide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinanceSide-Bridging-Header.h"; sourceTree = "<group>"; };
+		999F0E141F9D194B00D61C94 /* EPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPieChart.h; sourceTree = "<group>"; };
+		999F0E151F9D194B00D61C94 /* EColumn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EColumn.h; sourceTree = "<group>"; };
+		999F0E161F9D194C00D61C94 /* ELineChartDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELineChartDataModel.m; sourceTree = "<group>"; };
+		999F0E171F9D194C00D61C94 /* EColumn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EColumn.m; sourceTree = "<group>"; };
+		999F0E181F9D194C00D61C94 /* EColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EColor.h; sourceTree = "<group>"; };
+		999F0E191F9D194C00D61C94 /* UICountingLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		999F0E1A1F9D194C00D61C94 /* EFloatBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFloatBox.h; sourceTree = "<group>"; };
+		999F0E1B1F9D194C00D61C94 /* UICountingLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		999F0E1C1F9D194C00D61C94 /* EColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EColor.m; sourceTree = "<group>"; };
+		999F0E1D1F9D194C00D61C94 /* EColumnChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EColumnChart.m; sourceTree = "<group>"; };
+		999F0E1E1F9D194C00D61C94 /* EColumnDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EColumnDataModel.m; sourceTree = "<group>"; };
+		999F0E1F1F9D194D00D61C94 /* EColumnChartLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EColumnChartLabel.m; sourceTree = "<group>"; };
+		999F0E201F9D194D00D61C94 /* EColumnDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EColumnDataModel.h; sourceTree = "<group>"; };
+		999F0E211F9D194D00D61C94 /* ELine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELine.h; sourceTree = "<group>"; };
+		999F0E221F9D194D00D61C94 /* ELineChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELineChart.h; sourceTree = "<group>"; };
+		999F0E231F9D194D00D61C94 /* EViewSwitcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EViewSwitcher.h; sourceTree = "<group>"; };
+		999F0E241F9D194D00D61C94 /* EColumnChartLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EColumnChartLabel.h; sourceTree = "<group>"; };
+		999F0E251F9D194D00D61C94 /* EColumnChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EColumnChart.h; sourceTree = "<group>"; };
+		999F0E261F9D194E00D61C94 /* EFloatBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFloatBox.m; sourceTree = "<group>"; };
+		999F0E271F9D194E00D61C94 /* ELine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELine.m; sourceTree = "<group>"; };
+		999F0E281F9D194E00D61C94 /* ELineChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELineChart.m; sourceTree = "<group>"; };
+		999F0E291F9D194E00D61C94 /* EPieChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPieChart.m; sourceTree = "<group>"; };
+		999F0E2A1F9D194E00D61C94 /* EViewSwitcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EViewSwitcher.m; sourceTree = "<group>"; };
+		999F0E2B1F9D194E00D61C94 /* ELineChartDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELineChartDataModel.h; sourceTree = "<group>"; };
+		999F0E591F9D36D900D61C94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		999F0EDA1F9D699700D61C94 /* SwiftChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftChart.framework; sourceTree = "<group>"; };
+		99AD57321F9E6A1B00F8FCD4 /* realNewTradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realNewTradeViewController.swift; sourceTree = "<group>"; };
+		99E068B51FA22628005C13AF /* UICountingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UICountingLabel.framework; sourceTree = "<group>"; };
+		99E068B71FA271E8005C13AF /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		99E068B91FA32FAA005C13AF /* StatisticsTrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTrade.swift; sourceTree = "<group>"; };
+		99E068BB1FA33E2C005C13AF /* Reporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporting.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99056B5D1F90D52A00C6B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99E068B61FA22628005C13AF /* UICountingLabel.framework in Frameworks */,
+				999F0EAE1F9D5C6800D61C94 /* UIKit.framework in Frameworks */,
+				99056BCA1F95F68C00C6B269 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99056B711F90D52A00C6B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99056B7C1F90D52A00C6B269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D544E61BDF6F254EBA0E0F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99E068B51FA22628005C13AF /* UICountingLabel.framework */,
+				999F0EDA1F9D699700D61C94 /* SwiftChart.framework */,
+				999F0E591F9D36D900D61C94 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99056B571F90D52A00C6B269 = {
+			isa = PBXGroup;
+			children = (
+				99056B621F90D52A00C6B269 /* FinanceSide */,
+				99056B771F90D52A00C6B269 /* FinanceSideTests */,
+				99056B821F90D52A00C6B269 /* FinanceSideUITests */,
+				99056B611F90D52A00C6B269 /* Products */,
+				99056BC11F95F63700C6B269 /* Charts.xcodeproj */,
+				7D544E61BDF6F254EBA0E0F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99056B611F90D52A00C6B269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99056B601F90D52A00C6B269 /* FinanceSide.app */,
+				99056B741F90D52A00C6B269 /* FinanceSideTests.xctest */,
+				99056B7F1F90D52A00C6B269 /* FinanceSideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99056B621F90D52A00C6B269 /* FinanceSide */ = {
+			isa = PBXGroup;
+			children = (
+				99056BBF1F9226F900C6B269 /* BarChart.swift */,
+				99266FAB1F9F5F06006DD78A /* CircularTransition.swift */,
+				999F0E181F9D194C00D61C94 /* EColor.h */,
+				999F0E1C1F9D194C00D61C94 /* EColor.m */,
+				999F0E151F9D194B00D61C94 /* EColumn.h */,
+				999F0E171F9D194C00D61C94 /* EColumn.m */,
+				999F0E251F9D194D00D61C94 /* EColumnChart.h */,
+				999F0E1D1F9D194C00D61C94 /* EColumnChart.m */,
+				999F0E241F9D194D00D61C94 /* EColumnChartLabel.h */,
+				999F0E1F1F9D194D00D61C94 /* EColumnChartLabel.m */,
+				999F0E201F9D194D00D61C94 /* EColumnDataModel.h */,
+				999F0E1E1F9D194C00D61C94 /* EColumnDataModel.m */,
+				999F0E1A1F9D194C00D61C94 /* EFloatBox.h */,
+				999F0E261F9D194E00D61C94 /* EFloatBox.m */,
+				999F0E211F9D194D00D61C94 /* ELine.h */,
+				999F0E271F9D194E00D61C94 /* ELine.m */,
+				999F0E221F9D194D00D61C94 /* ELineChart.h */,
+				999F0E281F9D194E00D61C94 /* ELineChart.m */,
+				999F0E2B1F9D194E00D61C94 /* ELineChartDataModel.h */,
+				999F0E161F9D194C00D61C94 /* ELineChartDataModel.m */,
+				999F0E141F9D194B00D61C94 /* EPieChart.h */,
+				999F0E291F9D194E00D61C94 /* EPieChart.m */,
+				999F0E231F9D194D00D61C94 /* EViewSwitcher.h */,
+				999F0E2A1F9D194E00D61C94 /* EViewSwitcher.m */,
+				999F0E1B1F9D194C00D61C94 /* UICountingLabel.h */,
+				999F0E191F9D194C00D61C94 /* UICountingLabel.m */,
+				99056B631F90D52A00C6B269 /* AppDelegate.swift */,
+				99056B671F90D52A00C6B269 /* Main.storyboard */,
+				99056B951F90D81700C6B269 /* ViewController.swift */,
+				99056B6A1F90D52A00C6B269 /* Assets.xcassets */,
+				99056B6C1F90D52A00C6B269 /* LaunchScreen.storyboard */,
+				99056B6F1F90D52A00C6B269 /* Info.plist */,
+				990160A81F9B645200573203 /* connexionViewController.swift */,
+				998AE5FB1F9BAE680075F0B6 /* ShakingTextField.swift */,
+				99924B521F9CD65C0026DE16 /* newTradeController.swift */,
+				999F0E131F9D194A00D61C94 /* FinanceSide-Bridging-Header.h */,
+				99AD57321F9E6A1B00F8FCD4 /* realNewTradeViewController.swift */,
+				99266FA81F9F5DD5006DD78A /* menuViewController.swift */,
+				994A99F31FA095710078C2BE /* reportingViewController.swift */,
+				99E068B71FA271E8005C13AF /* Admin.swift */,
+				99E068B91FA32FAA005C13AF /* StatisticsTrade.swift */,
+				99E068BB1FA33E2C005C13AF /* Reporting.swift */,
+			);
+			path = FinanceSide;
+			sourceTree = "<group>";
+		};
+		99056B771F90D52A00C6B269 /* FinanceSideTests */ = {
+			isa = PBXGroup;
+			children = (
+				99056B781F90D52A00C6B269 /* FinanceSideTests.swift */,
+				99056B7A1F90D52A00C6B269 /* Info.plist */,
+			);
+			path = FinanceSideTests;
+			sourceTree = "<group>";
+		};
+		99056B821F90D52A00C6B269 /* FinanceSideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99056B831F90D52A00C6B269 /* FinanceSideUITests.swift */,
+				99056B851F90D52A00C6B269 /* Info.plist */,
+			);
+			path = FinanceSideUITests;
+			sourceTree = "<group>";
+		};
+		99056BC21F95F63700C6B269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99056BC71F95F63800C6B269 /* Charts.framework */,
+				99056BC91F95F63800C6B269 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99056B5F1F90D52A00C6B269 /* FinanceSide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99056B881F90D52B00C6B269 /* Build configuration list for PBXNativeTarget "FinanceSide" */;
+			buildPhases = (
+				99056B5C1F90D52A00C6B269 /* Sources */,
+				99056B5D1F90D52A00C6B269 /* Frameworks */,
+				99056B5E1F90D52A00C6B269 /* Resources */,
+				99056BA71F92109F00C6B269 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99056BCD1F95F68C00C6B269 /* PBXTargetDependency */,
+			);
+			name = FinanceSide;
+			productName = FinanceSide;
+			productReference = 99056B601F90D52A00C6B269 /* FinanceSide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99056B731F90D52A00C6B269 /* FinanceSideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99056B8B1F90D52B00C6B269 /* Build configuration list for PBXNativeTarget "FinanceSideTests" */;
+			buildPhases = (
+				99056B701F90D52A00C6B269 /* Sources */,
+				99056B711F90D52A00C6B269 /* Frameworks */,
+				99056B721F90D52A00C6B269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99056B761F90D52A00C6B269 /* PBXTargetDependency */,
+			);
+			name = FinanceSideTests;
+			productName = FinanceSideTests;
+			productReference = 99056B741F90D52A00C6B269 /* FinanceSideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99056B7E1F90D52A00C6B269 /* FinanceSideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99056B8E1F90D52B00C6B269 /* Build configuration list for PBXNativeTarget "FinanceSideUITests" */;
+			buildPhases = (
+				99056B7B1F90D52A00C6B269 /* Sources */,
+				99056B7C1F90D52A00C6B269 /* Frameworks */,
+				99056B7D1F90D52A00C6B269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99056B811F90D52A00C6B269 /* PBXTargetDependency */,
+			);
+			name = FinanceSideUITests;
+			productName = FinanceSideUITests;
+			productReference = 99056B7F1F90D52A00C6B269 /* FinanceSideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99056B581F90D52A00C6B269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Sofiane Bouragba Zrif ";
+				TargetAttributes = {
+					99056B5F1F90D52A00C6B269 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					99056B731F90D52A00C6B269 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 99056B5F1F90D52A00C6B269;
+					};
+					99056B7E1F90D52A00C6B269 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 99056B5F1F90D52A00C6B269;
+					};
+				};
+			};
+			buildConfigurationList = 99056B5B1F90D52A00C6B269 /* Build configuration list for PBXProject "FinanceSide" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99056B571F90D52A00C6B269;
+			productRefGroup = 99056B611F90D52A00C6B269 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99056BC21F95F63700C6B269 /* Products */;
+					ProjectRef = 99056BC11F95F63700C6B269 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				99056B5F1F90D52A00C6B269 /* FinanceSide */,
+				99056B731F90D52A00C6B269 /* FinanceSideTests */,
+				99056B7E1F90D52A00C6B269 /* FinanceSideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99056BC71F95F63800C6B269 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 99056BC61F95F63800C6B269 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99056BC91F95F63800C6B269 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 99056BC81F95F63800C6B269 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99056B5E1F90D52A00C6B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99056B6E1F90D52A00C6B269 /* LaunchScreen.storyboard in Resources */,
+				99056B6B1F90D52A00C6B269 /* Assets.xcassets in Resources */,
+				99056B691F90D52A00C6B269 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99056B721F90D52A00C6B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99056B7D1F90D52A00C6B269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99056B5C1F90D52A00C6B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F0E331F9D194F00D61C94 /* EFloatBox.m in Sources */,
+				999F0E2C1F9D194F00D61C94 /* ELineChartDataModel.m in Sources */,
+				990160A91F9B645200573203 /* connexionViewController.swift in Sources */,
+				99E068BA1FA32FAB005C13AF /* StatisticsTrade.swift in Sources */,
+				99E068B81FA271E8005C13AF /* Admin.swift in Sources */,
+				994A99F41FA095710078C2BE /* reportingViewController.swift in Sources */,
+				999F0E2E1F9D194F00D61C94 /* UICountingLabel.m in Sources */,
+				99056BC01F9226F900C6B269 /* BarChart.swift in Sources */,
+				99E068BC1FA33E2C005C13AF /* Reporting.swift in Sources */,
+				99056B961F90D81700C6B269 /* ViewController.swift in Sources */,
+				999F0E351F9D194F00D61C94 /* ELineChart.m in Sources */,
+				999F0E301F9D194F00D61C94 /* EColumnChart.m in Sources */,
+				999F0E321F9D194F00D61C94 /* EColumnChartLabel.m in Sources */,
+				999F0E371F9D194F00D61C94 /* EViewSwitcher.m in Sources */,
+				99AD57331F9E6A1B00F8FCD4 /* realNewTradeViewController.swift in Sources */,
+				99056B641F90D52A00C6B269 /* AppDelegate.swift in Sources */,
+				998AE5FC1F9BAE680075F0B6 /* ShakingTextField.swift in Sources */,
+				99924B531F9CD65C0026DE16 /* newTradeController.swift in Sources */,
+				999F0E2D1F9D194F00D61C94 /* EColumn.m in Sources */,
+				999F0E341F9D194F00D61C94 /* ELine.m in Sources */,
+				99266FAC1F9F5F06006DD78A /* CircularTransition.swift in Sources */,
+				999F0E361F9D194F00D61C94 /* EPieChart.m in Sources */,
+				999F0E2F1F9D194F00D61C94 /* EColor.m in Sources */,
+				999F0E311F9D194F00D61C94 /* EColumnDataModel.m in Sources */,
+				99266FA91F9F5DD5006DD78A /* menuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99056B701F90D52A00C6B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99056B791F90D52A00C6B269 /* FinanceSideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99056B7B1F90D52A00C6B269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99056B841F90D52A00C6B269 /* FinanceSideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99056B761F90D52A00C6B269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99056B5F1F90D52A00C6B269 /* FinanceSide */;
+			targetProxy = 99056B751F90D52A00C6B269 /* PBXContainerItemProxy */;
+		};
+		99056B811F90D52A00C6B269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99056B5F1F90D52A00C6B269 /* FinanceSide */;
+			targetProxy = 99056B801F90D52A00C6B269 /* PBXContainerItemProxy */;
+		};
+		99056BCD1F95F68C00C6B269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 99056BCC1F95F68C00C6B269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99056B671F90D52A00C6B269 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99056B681F90D52A00C6B269 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99056B6C1F90D52A00C6B269 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99056B6D1F90D52A00C6B269 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99056B861F90D52B00C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "";
+			};
+			name = Debug;
+		};
+		99056B871F90D52B00C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "";
+			};
+			name = Release;
+		};
+		99056B891F90D52B00C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865ZNM82T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = FinanceSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sofiane-Bouragba-Zrif.FinanceSide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinanceSide/FinanceSide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Debug;
+		};
+		99056B8A1F90D52B00C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865ZNM82T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = FinanceSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sofiane-Bouragba-Zrif.FinanceSide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinanceSide/FinanceSide-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Release;
+		};
+		99056B8C1F90D52B00C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865ZNM82T;
+				INFOPLIST_FILE = FinanceSideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sofiane-Bouragba-Zrif.FinanceSideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceSide.app/FinanceSide";
+			};
+			name = Debug;
+		};
+		99056B8D1F90D52B00C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865ZNM82T;
+				INFOPLIST_FILE = FinanceSideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sofiane-Bouragba-Zrif.FinanceSideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceSide.app/FinanceSide";
+			};
+			name = Release;
+		};
+		99056B8F1F90D52B00C6B269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865ZNM82T;
+				INFOPLIST_FILE = FinanceSideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sofiane-Bouragba-Zrif.FinanceSideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceSide;
+			};
+			name = Debug;
+		};
+		99056B901F90D52B00C6B269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865ZNM82T;
+				INFOPLIST_FILE = FinanceSideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sofiane-Bouragba-Zrif.FinanceSideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceSide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99056B5B1F90D52A00C6B269 /* Build configuration list for PBXProject "FinanceSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99056B861F90D52B00C6B269 /* Debug */,
+				99056B871F90D52B00C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99056B881F90D52B00C6B269 /* Build configuration list for PBXNativeTarget "FinanceSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99056B891F90D52B00C6B269 /* Debug */,
+				99056B8A1F90D52B00C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99056B8B1F90D52B00C6B269 /* Build configuration list for PBXNativeTarget "FinanceSideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99056B8C1F90D52B00C6B269 /* Debug */,
+				99056B8D1F90D52B00C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99056B8E1F90D52B00C6B269 /* Build configuration list for PBXNativeTarget "FinanceSideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99056B8F1F90D52B00C6B269 /* Debug */,
+				99056B901F90D52B00C6B269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99056B581F90D52A00C6B269 /* Project object */;
+}
